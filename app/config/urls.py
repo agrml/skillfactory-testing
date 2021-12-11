@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from example.urls import router as example_router
+from notes.urls import router as notes_router
 
 urlpatterns = [
-    path('api/', include((example_router.urls, 'example'))),
+    path('api/', include((notes_router.urls, 'notes'))),
     path('admin/', admin.site.urls),
 ]
