@@ -2,7 +2,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.test import APIClient
 import pytest
 
-from app.notes.models import Note
+from notes.models import Note
 
 
 @pytest.fixture
